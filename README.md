@@ -27,6 +27,11 @@ https://github.com/vntkshp/XPMC_tutorials/blob/2fa448e8c94fe485b29b264a126b42f01
 <summary><h3>2. Create a DevOps Project in Organization</summary><br>
 	* Create New Organisation and Project<br>
 	* Give permissions to all members.<br>
+	* Open (Project Name) > Project Settings > Teams > (Project Name) Team > Add > (paste user email ids) > Save <br>
+		To Add User to Project<br><br>
+
+ <img src="https://github.com/vntkshp/XPMC_tutorials/blob/412eb96d99ce11c5c3df8a7a182c95b9961062cd/Screenshorts/Organisation.jpg" width="350"><br><br>Click to view full image<br>**Add Users to DevOps Project**<br>
+ <img src="https://github.com/vntkshp/XPMC_tutorials/blob/412eb96d99ce11c5c3df8a7a182c95b9961062cd/Screenshorts/Add-Users.jpg" width="350">
 </details>
 
 
