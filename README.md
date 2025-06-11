@@ -94,9 +94,9 @@ sudo docker run hello-world
 
 **Clone Repository to VM**
 paste git repository link at the end for this to work
-```
-git clone 
-```
+
+git clone <USERNAME>@<Public IP Address>
+
 
 **Build image**
 ```
@@ -146,14 +146,14 @@ cat Dockerfile
 ```
 ***Backup nginx.conf**
 ```
-sudo mv /etc/nginx/nginx.conf etc/nginx/nginx.conf.bak
+sudo mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
 ```
 
 
 **Open nginx.conf**
 
 ```
-sudo nano etc/nginx/nginx.conf
+sudo nano /etc/nginx/nginx.conf
 ```
 
 ** Paste this in nginx.conf**
