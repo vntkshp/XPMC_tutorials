@@ -41,7 +41,7 @@ https://github.com/vntkshp/XPMC_tutorials/blob/2fa448e8c94fe485b29b264a126b42f01
 <summary><h3>3. Clone a project to Azure Repos
 </summary><br>
 	
-   1. Clone [this](https://github.com/dockersamples/snake-game-tensorflow-docker.git) demo project from github to Repos<br>
+   1. Clone this [demo project](https://github.com/dockersamples/snake-game-tensorflow-docker.git) from github to Repos<br>
    2. Create and Save **Personal Access Tokens** for later use<br>
    3. Create and Save **Git Credentials** for later use<br><br>
 </details>
@@ -94,9 +94,9 @@ sudo docker run hello-world
 
 **Clone Repository to VM**
 paste git repository link at the end for this to work
-
-git clone <i> (Username) + @ + (Public IP Address)   </i>
-
+```
+git clone (Enter URL from your git repository here)
+```
 
 **Build image**
 ```
@@ -190,15 +190,17 @@ sudo systemctl restart nginx
 
 <summary><h3>7. Create Pipeline
 </summary>
-	- Create New Self Hosted Agent
-	- Assign VM as Self Hosted Agent
-	- Create Linux based Agent
-	- **Save Access token for later use**
+	* Create New Self Hosted Agent<br>
+	* Assign VM as Self Hosted Agent<br>
+	* Create Linux based Agent<br>
+	* Save Access token for later use
 
-###Use following commands to configure Agent
+### Use following commands to configure Agent
 
-** Download Agent** 
-wget (agent URL)
+**Download Agent** <br>
+```
+wget <i>(paste agent URL here)</i>
+```
 
 **Make Directory and enter directory**
 ```
