@@ -105,12 +105,12 @@ sudo docker build -t my-image .
 
 **Run Docker Image**
 ```
-docker compose up -d
+sudo docker compose up -d
 ```
 
 **Stop Docker Image**
 ```
-docker compose down
+sudo docker compose down
 ```
 
 **List running docker containers**
