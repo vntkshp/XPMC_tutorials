@@ -8,8 +8,10 @@
    - Delete VM when all tasks listed below are completed
    - In Network Settings Create Inbound Rule for port 8080
 
-<img src="https://github.com/user-attachments/assets/6657078f-be16-4679-bb0a-565e6c8e1d0a" width="300">
-[![twitter]()](https://twitter.com/)
+<img src="https://github.com/vntkshp/XPMC-tutorial/Screenshorts/VM-Config.jpg" width="300">
+<img src="https://github.com/vntkshp/XPMC-tutorial/Screenshorts/VM-Disk.jpg" width="300">
+<img src="https://github.com/vntkshp/XPMC-tutorial/Screenshorts/VM-Network.jpg" width="300">
+
 
 </details>
 
