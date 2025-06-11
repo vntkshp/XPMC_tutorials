@@ -1,4 +1,8 @@
 # 💻 Azure Devops Video Tutorials
+
+
+
+[Link to Videos will be shared in 10 mins](blank)
 <details>
 
 <summary><h3> 1. Create a Virtual Machine(VM)</h3></summary><br><br>
