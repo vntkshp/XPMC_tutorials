@@ -88,9 +88,9 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io
 ```
 
 **Verify Docker installation**
----
+```
 sudo docker run hello-world
----
+```
 
 **Clone Repository to VM**
 paste git repository link at the end for this to work
@@ -129,7 +129,7 @@ sudo docker ps
 
 <details>
 
-<summary><h3>8. nginx tutorial</summary>
+<summary><h3>6. Run app on nginx</summary>
 
 **Install nginx**
 ```
