@@ -2,7 +2,7 @@
 
 
 
-[Link to Videos will be shared in 10 mins](blank)
+[Link to Videos](https://drive.google.com/drive/folders/1P6w-e_nP0tqIDPjzDJCn3jo9NdV3y9fD?usp=sharing)
 <details>
 
 <summary><h3> 1. Create a Virtual Machine(VM)</h3></summary><br><br>
