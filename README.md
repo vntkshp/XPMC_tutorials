@@ -95,7 +95,7 @@ sudo docker run hello-world
 **Clone Repository to VM**
 paste git repository link at the end for this to work
 
-git clone <USERNAME>@<Public IP Address>
+git clone <i> (Username) + @ + (Public IP Address)   </i>
 
 
 **Build image**
@@ -141,10 +141,8 @@ sudo apt install nginx
 nginx -version
 ```
 
-```
-cat Dockerfile
-```
-***Backup nginx.conf**
+
+**Backup nginx.conf**
 ```
 sudo mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
 ```
@@ -174,6 +172,12 @@ http {
 }
 ```
 
+**Restart nginx**
+
+```
+sudo systemctl restart nginx
+```
+
 
 
 </details>
@@ -201,11 +205,11 @@ mkdir myagent && cd myagent
 ```
  tar zxvf ~/vsts-agent-linux-x64-4.255.0.tar.gz
 ```
-**To configure Agent **
+**To configure Agent**
 ```
 ./config.sh
 ```
-**To start Agent **
+**To start Agent**
 ```
 ./run.sh
 ```
