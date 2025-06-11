@@ -214,6 +214,10 @@ mkdir myagent && cd myagent
 ```
 ./config.sh
 ```
+**Enable Docker Permission to use Agent**
+```
+sudo usermod -aG docker (Username)
+```
 **To start Agent**
 ```
 ./run.sh
