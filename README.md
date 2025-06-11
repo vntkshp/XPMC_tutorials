@@ -197,11 +197,14 @@ sudo systemctl restart nginx
 
 ###Use following commands to configure Agent
 
-** **
+** Download Agent** 
+wget (agent URL)
+
+**Make Directory and enter directory**
 ```
 mkdir myagent && cd myagent
 ```
-** **
+**Extract agent config in the directory**
 ```
  tar zxvf ~/vsts-agent-linux-x64-4.255.0.tar.gz
 ```
