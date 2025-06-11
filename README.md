@@ -154,7 +154,7 @@ sudo mv /etc/nginx/nginx.conf etc/nginx/nginx.conf.bak
 
 ```
 sudo nano etc/nginx/nginx.conf
-
+```
 
 ** Paste this in nginx.conf**
 ```
@@ -184,7 +184,7 @@ http {
 
 <details>
 
-<summary>9. Assign VM as Agent
+<summary><h3>7. Create Pipeline
 </summary>
 	- Create New Self Hosted Agent
 	- Assign VM as Self Hosted Agent
@@ -208,28 +208,6 @@ mkdir myagent && cd myagent
 **To start Agent **
 ```
 ./run.sh
-```
-
-
-</details>
-
-
-------------------------------------------------------------
-
-<details>
-
-<summary>10. Create an Agent in Azure Pipelines</summary>
-
-   - Search for Organisation in Search bar
-   - Create VM by giving the details.
-   - Create Project to access DevOps Applications
-
-
-<img src="https://github.com/user-attachments/assets/6657078f-be16-4679-bb0a-565e6c8e1d0a" width="300">
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
-
-```
-   puts "Hello World"
 ```
 
 </details>
