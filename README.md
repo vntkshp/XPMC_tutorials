@@ -199,7 +199,7 @@ sudo systemctl restart nginx
 
 **Download Agent** <br>
 ```
-wget <i>(paste agent URL here)</i>
+wget (paste agent URL here)
 ```
 
 **Make Directory and enter directory**
