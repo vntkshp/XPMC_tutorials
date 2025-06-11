@@ -1,0 +1,235 @@
+# 💻 Azure Devops Video Tutorials
+
+
+
+[Link to Videos](https://drive.google.com/drive/folders/1P6w-e_nP0tqIDPjzDJCn3jo9NdV3y9fD?usp=sharing)
+<details>
+
+<summary><h3> 1. Create a Virtual Machine(VM)</h3></summary><br><br>
+   * Configure VM with the same settings as in the Screenshots.<br>
+   * Save User-Name and Password for later use<br>
+   * Stop VM when not in use<br>
+   * Delete VM when all tasks listed below are completed<br>
+   * In Network Settings Create Inbound Rule for port 8080<br><br>
+
+
+<img src="https://github.com/vntkshp/XPMC_tutorials/blob/8a00e3ebbe300b48c2512d7e28529396476b3a51/Screenshorts/VM-Config.jpg" width="250"><br>
+<img src="https://github.com/vntkshp/XPMC_tutorials/blob/8a00e3ebbe300b48c2512d7e28529396476b3a51/Screenshorts/VM-Disk.jpg" width="250"><br>
+<img src="https://github.com/vntkshp/XPMC_tutorials/blob/92dd53cfcf413e17892e62bf5ce17d230a1b28f0/Screenshorts/VM-Network.jpg" width="250">
+
+
+</details>
+
+
+
+----------------------------------------------------------
+
+
+<details>
+
+<summary><h3>2. Create a DevOps Project in Organization</summary><br>
+	* Create New Organisation and Project<br>
+	* Give permissions to all members.<br>
+	* Open (Project Name) > Project Settings > Teams > (Project Name) Team > Add > (paste user email ids) > Save <br>
+		To Add User to Project<br><br>
+
+ <img src="https://github.com/vntkshp/XPMC_tutorials/blob/412eb96d99ce11c5c3df8a7a182c95b9961062cd/Screenshorts/Organisation.jpg" width="350"><br><br>Click to view full image<br>**Add Users to DevOps Project**<br>
+ <img src="https://github.com/vntkshp/XPMC_tutorials/blob/412eb96d99ce11c5c3df8a7a182c95b9961062cd/Screenshorts/Add-Users.jpg" width="350">
+</details>
+
+
+
+
+----------------------------------------------------------
+
+
+
+<details>
+
+<summary><h3>3. Clone a project to Azure Repos
+</summary><br>
+	
+   1. Clone this [demo project](https://github.com/dockersamples/snake-game-tensorflow-docker.git) from github to Repos<br>
+   2. Create and Save **Personal Access Tokens** for later use<br>
+   3. Create and Save **Git Credentials** for later use<br><br>
+</details>
+
+
+
+----------------------------------------------------------
+
+
+
+
+<details>
+
+<summary><h3>5. Run Docker on VM</summary><br>
+
+**Update your package index**
+```
+sudo apt update
+```
+
+**Install required packages to allow apt to use repositories over HTTPS**
+```
+sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+```
+
+**Add Docker's official GPG key**
+```
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+```
+
+**Set up the stable Docker repository**
+```
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+
+**Update the package index again**
+```
+sudo apt update
+```
+
+**Install Docker Engine**
+```
+sudo apt install -y docker-ce docker-ce-cli containerd.io
+```
+
+**Verify Docker installation**
+```
+sudo docker run hello-world
+```
+
+**Clone Repository to VM**
+paste git repository link at the end for this to work
+```
+git clone (Enter URL from your git repository here)
+```
+
+**Build image**
+```
+sudo docker build -t my-image .
+```
+
+**Run Docker Image**
+```
+sudo docker compose up -d
+```
+
+**Stop Docker Image**
+```
+sudo docker compose down
+```
+
+**List running docker containers**
+```
+sudo docker ps
+```
+
+</details>
+
+
+
+----------------------------------------------------------
+
+
+
+
+<details>
+
+<summary><h3>6. Run app on nginx</summary>
+
+**Install nginx**
+```
+sudo apt install nginx
+```
+
+**Check Version**
+```
+nginx -version
+```
+
+
+**Backup nginx.conf**
+```
+sudo mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
+```
+
+
+**Open nginx.conf**
+
+```
+sudo nano /etc/nginx/nginx.conf
+```
+
+** Paste this in nginx.conf**
+```
+events {}
+
+http {
+	server {
+    		listen 80;
+
+    		location / {
+        		proxy_pass http://127.0.0.1:8080;
+        		proxy_set_header Host $host;
+        		proxy_set_header X-Real-IP $remote_addr;
+        		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    		}
+	}
+}
+```
+
+**Restart nginx**
+
+```
+sudo systemctl restart nginx
+```
+
+
+
+</details>
+
+
+
+----------------------------------------------------------
+
+<details>
+
+<summary><h3>7. Create Pipeline
+</summary>
+	* Create New Self Hosted Agent<br>
+	* Assign VM as Self Hosted Agent<br>
+	* Create Linux based Agent<br>
+	* Save Access token for later use
+
+### Use following commands to configure Agent
+
+**Download Agent** <br>
+```
+wget (paste agent URL here)
+```
+
+**Make Directory and enter directory**
+```
+mkdir myagent && cd myagent
+```
+**Extract agent config in the directory**
+```
+ tar zxvf ~/vsts-agent-linux-x64-4.255.0.tar.gz
+```
+**To configure Agent**
+```
+./config.sh
+```
+**Enable Docker Permission to use Agent**
+```
+sudo usermod -aG docker (Username)
+```
+**To start Agent**
+```
+./run.sh
+```
+
+</details>
+
