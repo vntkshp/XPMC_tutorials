@@ -1,16 +1,18 @@
 # 💻 Azure Devops Video Tutorials
 <details>
 
-<summary>1. Create a Virtual Machine(VM)</summary>
-   - Configure VM with the same settings as in the Screenshots.
-   - Save User-Name and Password for later use
-   - Stop VM when not in use
-   - Delete VM when all tasks listed below are completed
-   - In Network Settings Create Inbound Rule for port 8080
+<summary><h3> 1. Create a Virtual Machine(VM)</h3></summary><br><br>
+   * Configure VM with the same settings as in the Screenshots.<br>
+   * Save User-Name and Password for later use<br>
+   * Stop VM when not in use<br>
+   * Delete VM when all tasks listed below are completed<br>
+   * In Network Settings Create Inbound Rule for port 8080<br><br>
 
-<img src="https://github.com/vntkshp/XPMC_tutorials/blob/8a00e3ebbe300b48c2512d7e28529396476b3a51/Screenshorts/VM-Config.jpg" width="500"><br>
-<img src="https://github.com/vntkshp/XPMC_tutorials/blob/8a00e3ebbe300b48c2512d7e28529396476b3a51/Screenshorts/VM-Disk.jpg" width="500"><br>
-<img src="https://github.com/vntkshp/XPMC_tutorials/blob/92dd53cfcf413e17892e62bf5ce17d230a1b28f0/Screenshorts/VM-Network.jpg" width="500">
+https://github.com/vntkshp/XPMC_tutorials/blob/2fa448e8c94fe485b29b264a126b42f01ee3ad6d/1_Virtual_Machine.mp4
+
+<img src="https://github.com/vntkshp/XPMC_tutorials/blob/8a00e3ebbe300b48c2512d7e28529396476b3a51/Screenshorts/VM-Config.jpg" width="250"><br>
+<img src="https://github.com/vntkshp/XPMC_tutorials/blob/8a00e3ebbe300b48c2512d7e28529396476b3a51/Screenshorts/VM-Disk.jpg" width="250"><br>
+<img src="https://github.com/vntkshp/XPMC_tutorials/blob/92dd53cfcf413e17892e62bf5ce17d230a1b28f0/Screenshorts/VM-Network.jpg" width="250">
 
 
 </details>
@@ -22,9 +24,9 @@
 
 <details>
 
-<summary>2. Create a DevOps Project in Organization</summary>
-	- Create New Organisation and Project
-	- Give permissions to all members.
+<summary><h3>2. Create a DevOps Project in Organization</summary><br>
+	* Create New Organisation and Project<br>
+	* Give permissions to all members.<br>
 </details>
 
 
@@ -36,12 +38,12 @@
 
 <details>
 
-<summary>3. Clone a project to Azure Repos
-</summary>
+<summary><h3>3. Clone a project to Azure Repos
+</summary><br>
 	
-   1. Clone ![this](https://github.com/dockersamples/snake-game-tensorflow-docker.git) demo project from github to Repos
-   2. Create and Save **Personal Access Tokens** for later use
-   3. Create and Save **Git Credentials** for later use
+   1. Clone [this](https://github.com/dockersamples/snake-game-tensorflow-docker.git) demo project from github to Repos<br>
+   2. Create and Save **Personal Access Tokens** for later use<br>
+   3. Create and Save **Git Credentials** for later use<br><br>
 </details>
 
 
@@ -53,7 +55,7 @@
 
 <details>
 
-<summary>5. Run Docker on VM</summary>
+<summary><h3>5. Run Docker on VM</summary><br>
 
 **Update your package index**
 ```
@@ -127,7 +129,7 @@ sudo docker ps
 
 <details>
 
-<summary>8. nginx tutorial</summary>
+<summary><h3>8. nginx tutorial</summary>
 
 **Install nginx**
 ```
